@@ -38,6 +38,18 @@ gem 'spree_gateway', '~> 3.3'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.7'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'factory_bot_rails'
+  gem 'simplecov', require: false
+end
+
+group :test do
+  gem 'selenium-webdriver', '2.53.1'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'selenium-webdriver', '2.53.1'
 end
 
 group :development do
