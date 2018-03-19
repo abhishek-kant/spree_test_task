@@ -1,0 +1,11 @@
+= simple_form_for [:admin, import_product_task], html: { multipart: true }, remote: true do |f|
+  .modal-content
+    .modal-header
+      h5.modal-title Modal title
+      button.close aria-label="Close" data-dismiss="modal" type="button"
+        span aria-hidden="true"  &times;
+    .modal-body
+      = f.input :import_file, label: "Import File", class: 'form-control'
+    .modal-footer
+      button.btn.btn-primary type="submit"  Upload CSV
+      button.btn.btn-secondary data-dismiss="modal" type="button"  Close

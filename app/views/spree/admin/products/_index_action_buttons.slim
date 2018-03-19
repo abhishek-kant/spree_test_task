@@ -1,0 +1,5 @@
+.col-md-6
+  = button_link_to Spree.t(:new_product), new_object_url, { class: "btn-success", icon: 'add', id: 'admin_new_product' }
+
+.col-md-6
+  = button_link_to Spree.t(:import_products), new_admin_import_products_task_path,{ class: "btn-primary", icon: 'add', id: 'admin_new_product', remote: true }

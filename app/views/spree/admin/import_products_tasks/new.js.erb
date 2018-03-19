@@ -1,0 +1,10 @@
+var partial = "<%= j(render partial:  "new") %>"
+
+//if an older form is already in the dom then replace that one otherwise append new form in the body
+if($("#import-form-modal").length >  0)
+  $("#import-form-modal").replaceWith(partial)
+else
+  $('body').append(partial)
+
+
+$("#import-form-modal").modal()

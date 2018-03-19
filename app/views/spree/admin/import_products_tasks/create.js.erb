@@ -1,0 +1,12 @@
+<% if @import_product_task.errors.present? %>
+  var partial = "<%= j(render "form", import_product_task: @import_product_task) %>"
+  $("#import-product-task-form-container").html(partial)
+<% else %>
+  $("#import-form-modal").modal("hide")
+<% end %>
+
+
+
+
+
+
