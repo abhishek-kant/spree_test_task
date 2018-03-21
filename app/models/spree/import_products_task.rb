@@ -6,7 +6,7 @@ class Spree::ImportProductsTask < ApplicationRecord
 
   validates_presence_of :import_file
 
-  after_create :queue_import
+  after_commit :queue_import, on: :create
 
   private
 
